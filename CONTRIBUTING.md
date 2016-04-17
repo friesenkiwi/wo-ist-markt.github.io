@@ -171,6 +171,17 @@ $ git push --force origin feature
 * You might wanna use **German spelling** with Umlauts for city names which is supported.
 * Add your city to the list of **supported cities** in the *README.md*.
 
+### Market data validation
+
+* The GeoJSON file will automatically be checked by a validation script when you push your
+  branch to the server. Please resolve any issues detected by the validator.
+* The validation script can be executed locally with the following command:
+
+  ``` bash
+  $ node validation/markets-validator.js
+
+  ```
+
 
 ## Code contributions
 
